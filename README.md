@@ -4,9 +4,17 @@ Reusable hand-drawn line-face avatars from ClosedReview. The package ships Georg
 
 Created by [Georgia Lin](https://github.com/GeorgiaLin).
 
-![Whoami Picasso preview showing hand-drawn faces across different background colors.](./assets/whoami-picasso-preview.svg)
+Each avatar combines one hand-drawn face with one background color. Use a seed for a stable profile picture, or ask for a random combination when you want a fresh one.
 
-Each avatar combines one hand-drawn face with a background color. Use a seed for a stable profile picture, or ask for a random combination when you want a fresh one.
+## Combinations
+
+Every included face works with every default background color.
+
+![Whoami Picasso combination grid showing each hand-drawn face across every default background color.](./assets/whoami-picasso-combinations.svg)
+
+## Palette
+
+![Whoami Picasso default color palette with hex values.](./assets/whoami-picasso-palette.svg)
 
 ## Install
 
