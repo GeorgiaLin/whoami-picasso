@@ -4,7 +4,23 @@ Reusable hand-drawn line-face avatars from ClosedReview. The package ships Georg
 
 Created by [Georgia Lin](https://github.com/GeorgiaLin).
 
-Each avatar combines one hand-drawn face with one background color. Use a seed for a stable profile picture, or ask for a random combination when you want a fresh one.
+Each avatar combines one hand-drawn face with one background color. Use a seed for a stable profile picture, ask for a random combination, or render the face without a background.
+
+## Faces Only
+
+The included face PNGs can be used by themselves.
+
+![Whoami Picasso face drawings without colored backgrounds.](./assets/whoami-picasso-faces.svg)
+
+```js
+import { renderAvatarHtml } from 'whoami-picasso';
+
+const faceOnly = renderAvatarHtml('user-123', {
+  assetBasePath: '/avatars/line-faces',
+  showBackground: false,
+  size: 40,
+});
+```
 
 ## Combinations
 
@@ -15,6 +31,22 @@ Every included face works with every default background color.
 ## Palette
 
 ![Whoami Picasso default color palette with hex values.](./assets/whoami-picasso-palette.svg)
+
+Copy the full default palette:
+
+```js
+export const colors = [
+  '#9BC3BA',
+  '#92A9D1',
+  '#B2A3CB',
+  '#FFD986',
+  '#FFB78D',
+  '#D29DAD',
+  '#BCC4BF',
+  '#E4A09E',
+  '#EED4CD',
+];
+```
 
 ## Install
 
@@ -37,6 +69,7 @@ If your npm scope is different, update the `name` field in `package.json` before
 
 ```js
 import {
+  DEFAULT_BACKGROUND_COLORS,
   getProfilePicture,
   getRandomProfilePicture,
   renderAvatarHtml,
@@ -47,15 +80,22 @@ const avatar = getProfilePicture('user-123');
 //   face: 'assets/line-faces/face1.png',
 //   faceIndex: 0,
 //   faceName: 'face1',
-//   backgroundColor: '#FFB78D',
-//   backgroundColorIndex: 4,
+//   backgroundColor: '#9BC3BA',
+//   backgroundColorIndex: 0,
 //   ...
 // }
 
 const randomAvatar = getRandomProfilePicture();
+const colors = [...DEFAULT_BACKGROUND_COLORS];
 
 const html = renderAvatarHtml('user-123', {
   assetBasePath: '/avatars/line-faces',
+  size: 40,
+});
+
+const faceOnlyHtml = renderAvatarHtml('user-123', {
+  assetBasePath: '/avatars/line-faces',
+  showBackground: false,
   size: 40,
 });
 ```
@@ -72,6 +112,10 @@ export function UserRow({ user }) {
   return <ProfilePicture userId={user.id} size={40} />;
 }
 
+export function FaceOnly({ user }) {
+  return <ProfilePicture userId={user.id} size={40} showBackground={false} />;
+}
+
 export function AnonymousComment() {
   return <RandomProfilePicture size={24} />;
 }
@@ -83,7 +127,7 @@ export function AnonymousComment() {
 import { getProfilePicture } from 'whoami-picasso';
 
 const avatar = getProfilePicture('user-123', {
-  colors: ['#9BC3BA', '#FFD986', '#E69072'],
+  colors: ['#9BC3BA', '#FFD986', '#E4A09E'],
 });
 ```
 

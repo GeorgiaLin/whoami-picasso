@@ -22,11 +22,9 @@ export const DEFAULT_BACKGROUND_COLORS = Object.freeze([
   '#FFD986',
   '#FFB78D',
   '#D29DAD',
-  '#5E7F9F',
   '#BCC4BF',
   '#E4A09E',
   '#EED4CD',
-  '#E69072',
 ]);
 
 export function hashSeed(seed) {
@@ -90,6 +88,7 @@ export function renderAvatarHtml(seed, options = {}) {
     assetBasePath,
     className = '',
     imageScale = 0.9,
+    showBackground = true,
     size = 40,
     ...avatarOptions
   } = options;
@@ -105,7 +104,7 @@ export function renderAvatarHtml(seed, options = {}) {
     `width: ${pixelSize}px; `,
     `height: ${pixelSize}px; `,
     'border-radius: 9999px; ',
-    `background-color: ${avatar.backgroundColor}; `,
+    `background-color: ${showBackground ? avatar.backgroundColor : 'transparent'}; `,
     'display: inline-flex; ',
     'align-items: center; ',
     'justify-content: center; ',

@@ -1,66 +1,56 @@
-<svg width="1500" height="300" viewBox="0 0 1500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="330" viewBox="0 0 1280 330" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#28323a" flood-opacity="0.13" />
     </filter>
   </defs>
-  <rect width="1500" height="300" rx="34" fill="#FAF8F4" />
+  <rect width="1280" height="330" rx="34" fill="#FAF8F4" />
   <text x="72" y="74" fill="#263238" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="36" font-weight="800">Default Palette</text>
-  <text x="72" y="108" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="20">the soft background colors included with whoami-picasso</text>
+  <text x="72" y="108" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="20">copy a hex code, or copy the full JavaScript color array from the README</text>
   
-    <g transform="translate(130 150)">
+    <g transform="translate(130 152)">
       <circle r="35" fill="#9BC3BA" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#9BC3BA</text>
     </g>
-    <g transform="translate(254 150)">
+    <g transform="translate(254 152)">
       <circle r="35" fill="#92A9D1" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#92A9D1</text>
     </g>
-    <g transform="translate(378 150)">
+    <g transform="translate(378 152)">
       <circle r="35" fill="#B2A3CB" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#B2A3CB</text>
     </g>
-    <g transform="translate(502 150)">
+    <g transform="translate(502 152)">
       <circle r="35" fill="#FFD986" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#FFD986</text>
     </g>
-    <g transform="translate(626 150)">
+    <g transform="translate(626 152)">
       <circle r="35" fill="#FFB78D" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#FFB78D</text>
     </g>
-    <g transform="translate(750 150)">
+    <g transform="translate(750 152)">
       <circle r="35" fill="#D29DAD" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#D29DAD</text>
     </g>
-    <g transform="translate(874 150)">
-      <circle r="35" fill="#5E7F9F" filter="url(#soft-shadow)" />
-      <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
-      <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#5E7F9F</text>
-    </g>
-    <g transform="translate(998 150)">
+    <g transform="translate(874 152)">
       <circle r="35" fill="#BCC4BF" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#BCC4BF</text>
     </g>
-    <g transform="translate(1122 150)">
+    <g transform="translate(998 152)">
       <circle r="35" fill="#E4A09E" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#E4A09E</text>
     </g>
-    <g transform="translate(1246 150)">
+    <g transform="translate(1122 152)">
       <circle r="35" fill="#EED4CD" filter="url(#soft-shadow)" />
       <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
       <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#EED4CD</text>
-    </g>
-    <g transform="translate(1370 150)">
-      <circle r="35" fill="#E69072" filter="url(#soft-shadow)" />
-      <circle r="35" fill="none" stroke="#263238" stroke-opacity="0.14" />
-      <text y="72" text-anchor="middle" fill="#52615f" font-family="ui-rounded, 'Avenir Next', Inter, Arial, sans-serif" font-size="17" font-weight="700">#E69072</text>
     </g>
 </svg>

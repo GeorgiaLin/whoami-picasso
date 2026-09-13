@@ -24,6 +24,7 @@ export interface AvatarHtmlOptions<Face = string> extends AvatarOptions<Face> {
   assetBasePath?: string;
   className?: string;
   imageScale?: number;
+  showBackground?: boolean;
   size?: number;
 }
 

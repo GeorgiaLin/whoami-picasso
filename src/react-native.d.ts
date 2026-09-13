@@ -22,6 +22,7 @@ export interface ProfilePictureProps extends ViewProps {
   imageScale?: number;
   imageStyle?: StyleProp<ImageStyle>;
   seed?: AvatarSeed;
+  showBackground?: boolean;
   size?: number;
   style?: StyleProp<ViewStyle>;
   userId?: AvatarSeed;
